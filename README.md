@@ -6,7 +6,7 @@ A weekend neural network experiment to generate game titles.
 
 I have no idea how any of this magic works, except for the magic I wrote:
 
-- `dump_igdb.js` - The script to use to essentially scrape [IGDB][]. _Do not use this for evil_. You'll need to run it with the following: `API_KEY='YOUR_API_KEY' node dump_igdb.js`. You'll likely burn the full month worth of free API requests, so check the script first to understand it. Back up the file it generates, because provided you have that file, you can pull whatever data from it that you like again later without burning more API requests.
+- `dump_igdb.js` - The script to use to essentially scrape [IGDB][igdb]. _Do not use this for evil_. You'll need to run it with the following: `API_KEY='YOUR_API_KEY' node dump_igdb.js`. You'll likely burn the full month worth of free API requests, so check the script first to understand it. Back up the file it generates, because provided you have that file, you can pull whatever data from it that you like again later without burning more API requests.
 
 Re-marshal that data from IGDB using jq:
 
@@ -56,5 +56,12 @@ $ th sample.lua \
     -length 2000 \
     -gpu -1
 ```
+
+## Appendix
+
+* [The Unreasonable Effectiveness of Recurrent Neural Networks](https://karpathy.github.io/2015/05/21/rnn-effectiveness/) by Andrej Karpathy.
+* [jcjohnson/torch-rnn.git](https://github.com/jcjohnson/torch-rnn).
+* https://chunml.github.io/ChunML.github.io/project/Creating-Text-Generator-Using-Recurrent-Neural-Network/
+* https://machinelearningmastery.com/text-generation-lstm-recurrent-neural-networks-python-keras/
 
 [igdb]: https://igdb.com
