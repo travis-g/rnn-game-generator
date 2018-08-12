@@ -16,6 +16,10 @@ $ jq -r '.games[].name' igdb-<time>.json > games.txt
 
 <!-- 📝 The R/RStudio stuff -->
 
+## Frameworks
+
+There are many different frameworks and setups out there, and dependency hell for RNN frameworks is real. After a few hours of trying to get configurations set up on bare metal, enter [docker-torch-rnn](https://github.com/crisbal/docker-torch-rnn), a Docker container designed for playing with [jcjohnson/torch-rnn][torch-rnn] (the lighter and faster successor to Karpathy's [char-rnn][char-rnn]).
+
 ## TLDR
 
 Bringing up the Docker image:
@@ -65,3 +69,11 @@ $ th sample.lua \
 * https://machinelearningmastery.com/text-generation-lstm-recurrent-neural-networks-python-keras/
 
 [igdb]: https://igdb.com
+[igdb-api]: https://api.igdb.com
+[igdb-api-stats]: https://api.igdb.com/buyer/stats
+[igdb-about]: https://www.igdb.com/about
+[r-project]: http://cran.us.r-project.org/
+[rstudio]: https://www.rstudio.com/
+[char-rnn]: https://github.com/karpathy/char-rnn
+[torch-rnn]: https://github.com/jcjohnson/torch-rnn
+[nvidia-docker]: https://github.com/NVIDIA/nvidia-docker
