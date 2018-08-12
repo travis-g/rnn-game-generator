@@ -1,4 +1,4 @@
-# game-generator
+# rnn-game-generator
 
 A weekend neural network experiment to generate game titles.
 
